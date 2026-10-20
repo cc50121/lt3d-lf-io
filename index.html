@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="">
+  <meta name="description" content="Long-Tailed 3D Detection via Multi-Modal Late-Fusion. Accepted by IJCV. Paper, benchmark results, detector code, models, and comparison video.">
   <meta property="og:title" content="Long-Tailed 3D Detection via Multi-Modal Late-Fusion." />
-  <meta property="og:description" content="" />
-  <meta property="og:url" content="" />
+  <meta property="og:description" content="Accepted by IJCV. LT3D benchmarks, multimodal late fusion, code, and models." />
+  <meta property="og:url" content="https://cc50121.github.io/lt3d-lf-io/" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/images/twitter-teaser-tails.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="https://cc50121.github.io/lt3d-lf-io/static/images/current-overview.png" />
+  <meta property="og:image:width" content="1701" />
+  <meta property="og:image:height" content="635" />
 
 
   <meta name="twitter:title" content="Long-Tailed 3D Detection via Multi-Modal Late-Fusion.">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:description" content="Accepted by IJCV. LT3D benchmarks, code, models, and comparison video.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/twitter-teaser-tails.png">
+  <meta name="twitter:image" content="https://cc50121.github.io/lt3d-lf-io/static/images/current-overview.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Long-Tailed Distribution, 3D Detection, Multi-Modal Late-Fusion, Autonomous Vehicles, Open World, LiDAR, RGB">
@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/current-release.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -50,94 +51,39 @@
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Long-Tailed 3D Detection via Multi-Modal Late-Fusion
-            </h1>
-            <p class="is-size-5 has-text-weight-semibold mb-4">Accepted by the International Journal of Computer Vision (IJCV)</p>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a target="_blank">Yechi Ma</a><sup>*</sup><sup>1</sup>,</span>
-              <span class="author-block">
-                <a target="_blank">Neehar Peri</a><sup>*</sup><sup>2</sup>,</span>
-              <span class="author-block">
-                <a target="_blank">Achal Dave</a><sup>3</sup>,</span>
-                <br />  
-                <span class="author-block">
-                <a target="_blank">Wei Hua</a><sup>1</sup>,</span>              
-              </span>
-              <span class="author-block">
-                <a target="_blank">Deva Ramanan</a><sup>2</sup>,</span>
-              </span>
-              <span class="author-block">
-                <a target="_blank">Shu Kong</a><sup>4</sup>,</span>
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Zhejiang University<br></span>
-              <span class="author-block"><sup>2</sup>Carnegie Mellon University<br></span>
-              <span class="author-block"><sup>3</sup>Antrhopic<br></span>
-              <span class="author-block"><sup>4</sup>University of Macau<br></span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-            </div>
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://github.com/cc50121/lt3d-lf" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-                
-                <!-- Versioned arXiv paper -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2312.10986v6" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>Paper (arXiv v6)</span>
-                  </a>
-                </span>                
-              </div>
-            <!-- </div>
-            <h1><strong style="color: red; font-size: x-large;">XXXXXX</strong></h1>
-          </div> -->
+        <div class="has-text-centered">
+          <h1 class="title is-1 publication-title">Long-Tailed 3D Detection via Multi-Modal Late-Fusion</h1>
+          <p class="publication-acceptance">Accepted by the International Journal of Computer Vision (IJCV)</p>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Yechi Ma<sup>1,&dagger;</sup>,</span>
+            <span class="author-block">Neehar Peri<sup>2,&dagger;</sup>,</span>
+            <span class="author-block">Achal Dave<sup>3</sup>,</span><br>
+            <span class="author-block">Wei Hua<sup>1</sup>,</span>
+            <span class="author-block">Deva Ramanan<sup>4</sup>,</span>
+            <span class="author-block">Shu Kong<sup>5,*</sup></span>
+          </div>
+          <p class="publication-affiliations">
+            <sup>1</sup>Zhejiang University &middot; <sup>2</sup>Caltech &middot; <sup>3</sup>Toyota Research Institute<br>
+            <sup>4</sup>Carnegie Mellon University &middot; <sup>5</sup>University of Macau
+          </p>
+          <p class="publication-contribution"><sup>&dagger;</sup>Equal contribution &middot; <sup>*</sup>Corresponding author</p>
+          <div class="publication-links">
+            <a href="https://arxiv.org/pdf/2312.10986v6" class="external-link button is-normal is-dark"><span class="icon"><i class="ai ai-arxiv" aria-hidden="true"></i></span><span>Paper</span></a>
+            <a href="https://github.com/cc50121/lt3d-lf" class="external-link button is-normal is-dark"><span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span><span>Code</span></a>
+            <a href="https://github.com/cc50121/lt3d-lf/releases/tag/ijcv-reproducibility-v1" class="external-link button is-normal is-dark"><span class="icon"><i class="fas fa-download" aria-hidden="true"></i></span><span>Models</span></a>
+            <a href="#results" class="external-link button is-normal is-dark"><span class="icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></span><span>Results</span></a>
+            <a href="#video" class="external-link button is-normal is-dark"><span class="icon"><i class="fas fa-play" aria-hidden="true"></i></span><span>Video</span></a>
+          </div>
         </div>
-      </div>  
+      </div>
     </div>
   </section>
   <!-- Paper abstract -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p style="text-align: justify;">
-              Contemporary autonomous vehicle (AV) benchmarks have advanced techniques for training 3D detectors, 
-              particularly on large-scale multi-modal (LiDAR + RGB) data. Surprisingly, although semantic class labels naturally follow a long-tailed distribution, 
-              existing benchmarks only focus on a few common classes (e.g., pedestrian and car) and neglect many rare but crucial classes (e.g., emergency vehicle and stroller). 
-              However, AVs must reliably detect both common and rare classes for safe operation in the open world. We address this challenge by formally studying the problem of Long-Tailed 3D Detection (LT3D), 
-              which evaluates all annotated classes, including those in-the-tail. We address LT3D with hierarchical losses that promote feature sharing across classes, 
-              and introduce diagnostic metrics that award partial credit to ``reasonable'' mistakes with respect to the semantic hierarchy (e.g., mistaking a child for an adult). 
-              Further, we point out that rare-class accuracy is particularly improved via multi-modal late fusion (MMLF) of independently trained uni-modal LiDAR and RGB detectors. 
-              Importantly, such an MMLF framework allows us to leverage large-scale uni-modal datasets (with more examples for rare classes) to train better uni-modal detectors, 
-              unlike prevailing end-to-end trained multi-modal detectors that require paired multi-modal data. Finally, we examine three critical components of our simple MMLF approach from first principles and investigate whether to train 2D or 3D RGB detectors for fusion, 
-              whether to match RGB and LiDAR detections in 3D or the projected 2D image plane, and how to fuse matched detections. 
-              Extensive experiments reveal that 2D RGB detectors achieve better recognition accuracy for rare classes than 3D RGB detectors and matching on the 2D image plane mitigates depth estimation errors for better matching. 
-              Our proposed MMLF approach significantly improves LT3D performance over prior work, particularly improving rare class performance from 12.8 to 20.0 mAP! 
-              Our code and models are available on our project page.
-            </ul>  
-          </div>
-        </div>
-      </div>
+      <h2 class="title is-3 has-text-centered">Abstract</h2>
+      <div class="content has-text-justified"><p>Contemporary autonomous vehicle benchmarks have significantly advanced multimodal LiDAR and RGB 3D detection. However, despite the naturally long-tailed distribution of object classes, existing benchmarking protocols primarily focus on a small set of frequent categories, largely overlooking rare but safety-critical classes. We formalize this problem as Long-Tailed 3D Detection (LT3D), where evaluation encompasses all annotated classes. We introduce hierarchical losses that promote feature sharing across classes, diagnostic metrics that assign partial credit to semantically reasonable mistakes with respect to the semantic hierarchy, and a Multi-Modal Late-Fusion (MMLF) framework. MMLF combines independently trained LiDAR and RGB detectors, allowing advanced unimodal models and additional unimodal data to be used without paired LiDAR-RGB training. We examine three fundamental design choices: the RGB detector representation, cross-modal association space, and fusion strategy. Our experiments show that 2D RGB detectors recognize rare classes more reliably than monocular 3D detectors, image-plane association is robust to depth errors, and probabilistic fusion of calibrated scores provides the best performance. Experiments on nuScenes and Argoverse 2 establish a new state of the art for LT3D.</p></div>
+      <p class="benchmark-summary">nuScenes LT3D: <strong>57.0 mAP</strong>, <strong>29.2 Few AP</strong> &nbsp;&middot;&nbsp; Argoverse 2: <strong>58.6 mAP</strong>, <strong>45.3 Few AP</strong></p>
     </div>
   </section>
   <!-- End paper abstract -->
@@ -154,7 +100,7 @@
             <div class="item">
               <!-- Your image here -->
               <!-- <img src="static/images/imagenet_1k_freq.png" alt="1" style="width: 250px; height: auto; display: block; margin: 0 auto;"/>-->
-              <img src="static/images/nuScenes_Distribution_00.png" alt="1" style="width: auto; height: auto; display: block; margin: 0 auto;"/> 
+              <img src="static/images/current-overview.png" alt="Long-tailed nuScenes class distribution and rare-object examples" style="width: auto; height: auto; display: block; margin: 0 auto;"/>
               <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin-top: 10px; color: #333;">
                 According to the histogram of per-class object counts (on the left), 
                 the nuScenes benchmark focuses on the common classes in cyan (e.g., car and barrier) 
@@ -257,14 +203,14 @@
             <div class="item">
               <!-- Your image here -->
               <!-- <img src="static/images/imagenet_1k_freq.png" alt="1" style="width: 250px; height: auto; display: block; margin: 0 auto;"/>-->
-              <img src="static/images/splashy-fig-v3_00.png" alt="1" style="width: auto; height: auto; display: block; margin: 0 auto;"/> 
+              <img src="static/images/current-design-choices.png" alt="RGB representation, cross-modal association, and fusion design choices" style="width: auto; height: auto; display: block; margin: 0 auto;"/>
               <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin-top: 10px; color: #333;">
                 We examine three key components in the multi-modal late-fusion (MMLF) of uni-modal RGB and LiDAR detectors from first principles:
                 A. whether to train 2D or 3D RGB detectors, 
                 B. whether to match uni-modal detections on the 2D image plane or in the 3D bird's-eye-view (BEV), and
                 C. how to best fuse matched detections.
                 Our exploration reveals that using 2D RGB detectors, matching on the 2D image plane, 
-                and combining calibrated scores with Bayesian fusion yields state-of-the-art LT3D performance.
+                and combining score-adjusted detections with probabilistic fusion yields state-of-the-art LT3D performance.
               </p>
               <!-- <img src="static/images/promptgpt.png" alt="Image illustrating ChatGPT interaction with VLMs"
                 style="width: 850px; height: auto; display: block; margin: 0 auto;"> -->
@@ -300,21 +246,24 @@
             <div class="item">
               <!-- Your image here -->
               <!-- <img src="static/images/imagenet_1k_freq.png" alt="1" style="width: 250px; height: auto; display: block; margin: 0 auto;"/>-->
-              <img src="static/images/visual-results-v3_00.png" alt="1" style="width: auto; height: auto; display: block; margin: 0 auto;"/> 
+              <img src="static/images/current-qualitative.png" alt="Image-plane association and semantic relabeling examples" style="width: auto; height: auto; display: block; margin: 0 auto;"/>
               <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin-top: 10px; color: #333;">
-                Three examples demonstrate how our multi-modal late-fusion (MMLF) approach improves LT3D by ensembling 2D RGB detections (from DINO) and 3D LiDAR detections (from CenterPoint). 
+                Three examples demonstrate how our multi-modal late-fusion (MMLF) approach improves LT3D by ensembling 2D RGB detections and 3D LiDAR detections (from CenterPoint).
                 In all examples, MMLF correctly relabels detections which are geometrically similar (w.r.t size and shape) in LiDAR but are visually distinct in RGB, such as bus-vs-truck, adult-vs-stroller, and adult-vs-child.
               </p>
               <!-- <img src="static/images/promptgpt.png" alt="Image illustrating ChatGPT interaction with VLMs"
                 style="width: 850px; height: auto; display: block; margin: 0 auto;"> -->
             </div>
           </div>
-          <video controls>
-            <source src="static/videos/lt3d-lf-video.mp4" type="video/mp4"/>          
-          </video>
-          <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin-top: 10px; color: #333;">
-            The video demo shows that our method is significantly better than CMT on dataset.
-          </p>
+          <figure id="video" class="comparison-video">
+            <h3 class="title is-4">CMT, CCF, and MMLF: Video Comparison</h3>
+            <video controls playsinline preload="metadata" width="1550" height="1132" poster="static/images/current-comparison.jpg">
+              <source src="static/videos/current-comparison.mp4" type="video/mp4">
+              <p><a href="static/videos/current-comparison.mp4">Download the comparison video</a>.</p>
+            </video>
+            <figcaption class="media-caption">Selected continuous-frame comparisons of CMT, CCF, and MMLF. Six camera views and a LiDAR bird's-eye view are shown for each method. The clips use ground-truth-guided selection and score-filtered predictions for visual clarity; benchmark scores are evaluated on the full validation set.</figcaption>
+            <p class="video-download"><a href="static/videos/current-comparison.mp4" download>Download video (MP4)</a></p>
+          </figure>
         </div>
       </div>
     </div>
@@ -325,35 +274,68 @@
 
 
   
-  <!-- Qualitative Results -->
-  <section class="section hero is-light2">
+  <!-- Benchmarking results -->
+  <section class="section" id="results">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-4">Benchmarking Results</h2>
-          <div class="content">
-
-            <div class="item">
-              <!-- Your image here -->
-              <p style="text-align: justify; font-size: 16px; line-height: 1.5; color: #333;">
-                Benchmarking results on nuScenes.
-              </p>
-              <img src="static/images/Table1.png" alt="1" />
-            </div>
-            <div class="item">
-              <!-- Your image here -->
-              <p style="text-align: justify; font-size: 16px; line-height: 1.5; color: #333;"> 
-                Comparison with the Argoverse 2 state-of-the-art.
-              </p>
-              <img src="static/images/Table2.png" alt="1" style="height: 200px;"/>
-            </div>
-
-          </div>
-        </div>
-      </div>
+      <h2 class="title is-3 has-text-centered">Benchmarking Results</h2>
+      <p class="benchmark-intro">Results from the paper on long-tailed 3D detection. C denotes RGB cameras and L denotes LiDAR; all scores are AP percentages. Oracle results are shown separately and do not represent detector performance.</p>
+      <h3 class="title is-4">nuScenes: 18-Class LT3D Benchmark</h3>
+      <div class="benchmark-scroll" role="region" aria-label="nuScenes LT3D results" tabindex="0">
+<table class="benchmark-table" id="nuscenes-results">
+<thead><tr><th scope="col">Method</th><th scope="col">Modality</th><th scope="col">All</th><th scope="col">Many</th><th scope="col">Medium</th><th scope="col">Few</th></tr></thead>
+<tbody>
+<tr><th scope="row">FCOS3D <span class="method-venue">(ICCVW'21)</span></th><td>C</td><td>20.9</td><td>39.0</td><td>23.3</td><td>2.9</td></tr>
+<tr><th scope="row">BEVFormer <span class="method-venue">(ECCV'22)</span></th><td>C</td><td>27.3</td><td>52.3</td><td>31.6</td><td>1.4</td></tr>
+<tr><th scope="row">PolarFormer <span class="method-venue">(AAAI'23)</span></th><td>C</td><td>28.0</td><td>54.0</td><td>31.6</td><td>2.2</td></tr>
+<tr><th scope="row">DenseBEV <span class="method-venue">(WACV'26)</span></th><td>C</td><td>29.7</td><td>54.9</td><td>33.1</td><td>4.7</td></tr>
+<tr class="group-start"><th scope="row">CenterPoint <span class="method-venue">(CVPR'21)</span></th><td>L</td><td>39.2</td><td>76.4</td><td>43.1</td><td>3.5</td></tr>
+<tr><th scope="row">TransFusion-L <span class="method-venue">(CVPR'22)</span></th><td>L</td><td>38.5</td><td>68.5</td><td>42.8</td><td>8.4</td></tr>
+<tr><th scope="row">BEVFusion-L <span class="method-venue">(ICRA'23)</span></th><td>L</td><td>42.5</td><td>72.5</td><td>48.0</td><td>10.6</td></tr>
+<tr><th scope="row">CMT-L <span class="method-venue">(ICCV'23)</span></th><td>L</td><td>34.7</td><td>73.4</td><td>35.9</td><td>1.1</td></tr>
+<tr><th scope="row">FSHNet <span class="method-venue">(CVPR'25)</span></th><td>L</td><td>41.6</td><td>79.2</td><td>47.6</td><td>3.3</td></tr>
+<tr class="group-start"><th scope="row">CenterPoint + RCNN</th><td>C+L</td><td>34.0</td><td>64.8</td><td>37.5</td><td>4.3</td></tr>
+<tr><th scope="row">CLOCS (CenterPoint, DINO) <span class="method-venue">(IROS'20)</span></th><td>C+L</td><td>40.0</td><td>68.2</td><td>45.7</td><td>10.0</td></tr>
+<tr><th scope="row">CLOCS (CenterPoint, Co-DINO) <span class="method-venue">(IROS'20)</span></th><td>C+L</td><td>45.2</td><td>73.3</td><td>50.9</td><td>15.1</td></tr>
+<tr><th scope="row">TransFusion <span class="method-venue">(CVPR'22)</span></th><td>C+L</td><td>39.8</td><td>73.9</td><td>41.2</td><td>9.8</td></tr>
+<tr><th scope="row">DeepInteraction <span class="method-venue">(NeurIPS'22)</span></th><td>C+L</td><td>43.7</td><td>76.2</td><td>51.1</td><td>7.9</td></tr>
+<tr><th scope="row">BEVFusion <span class="method-venue">(ICRA'23)</span></th><td>C+L</td><td>45.5</td><td>75.5</td><td>52.0</td><td>12.8</td></tr>
+<tr><th scope="row">CMT <span class="method-venue">(ICCV'23)</span></th><td>C+L</td><td>44.4</td><td>79.9</td><td>53.0</td><td>4.8</td></tr>
+<tr><th scope="row">EA-LSS <span class="method-venue">(arXiv'23)</span></th><td>C+L</td><td>44.6</td><td>79.5</td><td>52.6</td><td>6.2</td></tr>
+<tr><th scope="row">IS-Fusion <span class="method-venue">(CVPR'24)</span></th><td>C+L</td><td>44.1</td><td>77.9</td><td>59.4</td><td>3.8</td></tr>
+<tr><th scope="row">CCF <span class="method-venue">(CVPR'26)</span></th><td>C+L</td><td>47.1</td><td>79.8</td><td>56.2</td><td>9.2</td></tr>
+<tr><th scope="row">FOMO-3D <span class="method-venue">(CoRL'25)</span></th><td>C+L</td><td>54.6</td><td>79.9</td><td>59.6</td><td>27.6</td></tr>
+<tr class="group-start"><th scope="row">MMF (CenterPoint, FCOS3D)</th><td>C+L</td><td>43.6</td><td>77.1</td><td>49.0</td><td>9.4</td></tr>
+<tr><th scope="row">MMLF (CenterPoint, DINO)</th><td>C+L</td><td>53.1</td><td>78.6</td><td>60.3</td><td>23.3</td></tr>
+<tr><th scope="row">MMLF (CenterPoint, GroundingDINO)</th><td>C+L</td><td>55.2</td><td>79.9</td><td>62.5</td><td>26.0</td></tr>
+<tr class="best-result"><th scope="row">MMLF (CenterPoint, Co-DINO)</th><td>C+L</td><td>57.0</td><td>80.7</td><td>64.0</td><td>29.2</td></tr>
+<tr class="oracle-result"><th scope="row">MMLF (CenterPoint, ground-truth 2D boxes) <span class="method-venue">(Oracle)</span></th><td>C+L</td><td>77.1</td><td>85.9</td><td>73.9</td><td>73.6</td></tr>
+</tbody></table></div>
+      <p class="benchmark-note">MMLF with CenterPoint and Co-DINO achieves 57.0 mAP, compared with 54.6 for FOMO-3D and 47.1 for CCF. The released prediction reports 57.04 mAP and 62.81 NDS before rounding. This is the 18-class LT3D protocol, not the standard 10-class nuScenes benchmark.</p>
+      <h3 class="title is-4">Argoverse 2: 26 Classes at 50 m</h3>
+      <div class="benchmark-scroll" role="region" aria-label="Argoverse 2 LT3D results" tabindex="0">
+<table class="benchmark-table" id="av2-results">
+<thead><tr><th scope="col">Method</th><th scope="col">Modality</th><th scope="col">All</th><th scope="col">Many</th><th scope="col">Medium</th><th scope="col">Few</th></tr></thead>
+<tbody>
+<tr><th scope="row">FCOS3D</th><td>C</td><td>14.6</td><td>27.4</td><td>17.0</td><td>7.8</td></tr>
+<tr><th scope="row">DenseBEV</th><td>C</td><td>26.1</td><td>35.8</td><td>28.9</td><td>19.6</td></tr>
+<tr class="group-start"><th scope="row">CenterPoint</th><td>L</td><td>44.0</td><td>77.4</td><td>46.9</td><td>30.2</td></tr>
+<tr><th scope="row">FSHNet</th><td>L</td><td>45.1</td><td>78.2</td><td>47.0</td><td>32.7</td></tr>
+<tr class="group-start"><th scope="row">CCF</th><td>C+L</td><td>49.9</td><td>81.8</td><td>52.0</td><td>37.6</td></tr>
+<tr class="group-start"><th scope="row">MMF (CenterPoint, FCOS3D)</th><td>C+L</td><td>48.4</td><td>79.0</td><td>51.4</td><td>35.3</td></tr>
+<tr class="best-result"><th scope="row">MMLF (CenterPoint, Co-DINO)</th><td>C+L</td><td>58.6</td><td>93.9</td><td>60.7</td><td>45.3</td></tr>
+</tbody></table></div>
+      <p class="benchmark-note">MMLF achieves 58.6 mAP and 45.3 Few AP on Argoverse 2. Results follow the paper's 50 m evaluation protocol.</p>
+      <p class="benchmark-resources"><a href="https://arxiv.org/pdf/2312.10986v6">Paper</a> &middot; <a href="https://github.com/cc50121/lt3d-lf/blob/master/docs/results.md">Detailed nuScenes results</a> &middot; <a href="static/data/benchmarks.json">Download benchmark data (JSON)</a></p>
     </div>
   </section>
-  <!-- End Qualitative Results -->
+  <!-- End benchmarking results -->
+  <section class="section hero is-light" id="resources">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Code and Models</h2>
+      <p class="has-text-centered"><a href="https://github.com/cc50121/lt3d-lf">Source code</a> &middot; <a href="https://github.com/cc50121/lt3d-lf/releases/tag/ijcv-reproducibility-v1">Detector sources and checkpoints</a> &middot; <a href="https://github.com/cc50121/lt3d-lf/blob/master/docs/reproducibility.md">Reproduction guide</a></p>
+      <p class="media-caption">The release includes detector source snapshots, configurations, checkpoints, score-adjustment coefficients, cached LiDAR input, and training/inference entry points. Checkpoint provenance and verification limits are documented in the reproduction guide.</p>
+    </div>
+  </section>
 
   <!--BibTex citation -->
   <section class="section hero is-light" id="BibTeX">
@@ -361,11 +343,11 @@
       <h2 class="title">BibTeX</h2>
       <p>Accepted by IJCV. Publisher-assigned bibliographic details will be added when available.</p>
       <pre><code>@article{ma2023longtailed,
-        title={Long-Tailed 3D Detection via Multi-Modal Fusion},
+        title={Long-Tailed 3D Detection via Multi-Modal Late-Fusion},
         author={Ma, Yechi and Peri, Neehar and Dave, Achal and Hua, Wei and Ramanan, Deva and Kong, Shu},
         journal={arXiv preprint arXiv:2312.10986},
         year={2023},
-        note={Version 6, 2026. Accepted by International Journal of Computer Vision (IJCV)},
+        note={Accepted by International Journal of Computer Vision (IJCV)},
         url={https://arxiv.org/pdf/2312.10986v6}
       }</code></pre>
       <pre><code>@inproceedings{peri2022towards,

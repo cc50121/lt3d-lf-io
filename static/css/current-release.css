@@ -1,0 +1,35 @@
+.publication-title { letter-spacing: 0; overflow-wrap: break-word; }
+.publication-acceptance { margin: 0 0 1.5rem; font-size: 1.125rem; font-weight: 600; color: #267653; }
+.publication-affiliations { margin-top: 1rem; line-height: 1.7; }
+.publication-contribution { margin: .5rem 0 1.25rem; font-size: .875rem; color: #555; }
+.publication-links { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem; }
+.publication-links .button { border-radius: 4px; }
+.benchmark-summary { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #d9dfe3; text-align: center; line-height: 1.8; }
+.benchmark-intro, .benchmark-note { color: #4c5158; line-height: 1.7; margin-bottom: 1.5rem; }
+.benchmark-scroll { width: 100%; overflow-x: auto; margin: 1rem 0; border-top: 2px solid #28323c; border-bottom: 1px solid #bdc5cb; }
+.benchmark-table { width: 100%; min-width: 650px; font-size: .875rem; font-variant-numeric: tabular-nums; }
+.benchmark-table th, .benchmark-table td { padding: .65rem .7rem; border-bottom: 1px solid #e6eaed; vertical-align: middle; text-align: right; }
+.benchmark-table thead th { background: #f2f5f7; font-weight: 600; color: #26333d; }
+.benchmark-table th:first-child { width: 47%; text-align: left; font-weight: 400; }
+.benchmark-table thead th:first-child { font-weight: 600; }
+.benchmark-table th:nth-child(2), .benchmark-table td:nth-child(2) { text-align: center; }
+.benchmark-table .group-start > * { border-top: 2px solid #b7c1c9; }
+.benchmark-table .best-result > * { background: #eaf5ee; color: #1a5639; font-weight: 700; }
+.benchmark-table .oracle-result > * { background: #f3f3f3; color: #666; }
+.method-venue { display: inline-block; font-size: .8rem; color: #606972; font-weight: 400; }
+.benchmark-note { font-size: .875rem; }
+#results .title.is-4 { margin-top: 2rem; margin-bottom: 1rem; }
+.benchmark-resources, .video-download { line-height: 1.8; text-align: center; }
+.comparison-video { margin: 2rem 0 0; scroll-margin-top: 1rem; }
+.comparison-video video { display: block; width: 100%; height: auto; aspect-ratio: 1550 / 1132; object-fit: contain; background: #111; }
+.media-caption { margin: .8rem 0 1rem; color: #555; font-size: .875rem; line-height: 1.7; }
+section { scroll-margin-top: 1rem; }
+@media (max-width: 600px) {
+  .publication-title.title.is-1 { font-size: 2rem; line-height: 1.2; }
+  .publication-acceptance { font-size: 1rem; }
+  .publication-authors.is-size-5 { font-size: 1rem !important; }
+  .publication-affiliations { font-size: .875rem; }
+  .hero-body { padding: 2rem 1.25rem; }
+  .section { padding: 2.5rem 1.25rem; }
+  .benchmark-table th, .benchmark-table td { padding: .6rem; }
+}
